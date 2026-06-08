@@ -1,0 +1,14 @@
+node_modules/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+coverage/
+reports/
