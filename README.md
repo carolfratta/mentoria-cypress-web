@@ -1,66 +1,76 @@
-# Mentoria Cypress Web
+# 🚀 Mentoria Cypress Web
 
-Projeto de automação de testes web desenvolvido com Cypress utilizando JavaScript, Page Object Model (POM), Custom Commands e Faker para geração de massa dinâmica.
+Projeto de automação de testes web desenvolvido com **Cypress**, utilizando **JavaScript**, **Page Object Model (POM)**, **Custom Commands** e **Faker** para geração de massa dinâmica.
 
-## Tecnologias Utilizadas
+---
 
-- Cypress
-- JavaScript
-- Faker JS
-- Git
-- GitHub
+## 🛠️ Tecnologias Utilizadas
 
-## Boas Práticas Aplicadas
+* Cypress
+* JavaScript
+* Faker JS
+* Git
+* GitHub
 
-- Page Object Model (POM)
-- Custom Commands
-- Fixtures
-- Massa dinâmica com Faker
-- Reutilização de código
-- Testes responsivos (Mobile e Desktop)
+---
 
-## Funcionalidades Automatizadas
+## 📚 Boas Práticas Aplicadas
 
-### Login
+* Page Object Model (POM)
+* Custom Commands
+* Fixtures
+* Massa dinâmica com Faker
+* Reutilização de código
+* Testes responsivos (Mobile e Desktop)
 
-Cenários automatizados:
+---
 
-- Login com sucesso
-- Login com e-mail vazio
-- Login com senha vazia
-- Login com e-mail inválido
-- Login com senha inválida
-- Navegação para tela de cadastro
+## ✅ Funcionalidades Automatizadas
 
-### Cadastro de Usuário
+### 🔐 Login
 
-Cenários automatizados:
+**Cenários automatizados:**
 
-- Cadastro realizado com sucesso
-- Cadastro com e-mail inválido
-- Cadastro com e-mail sem caractere @
+* Login com sucesso
+* Login com e-mail vazio
+* Login com senha vazia
+* Login com e-mail inválido
+* Login com senha inválida
+* Navegação para tela de cadastro
 
-### Checkout
+### 👤 Cadastro de Usuário
 
-Cenários automatizados:
+**Cenários automatizados:**
 
-- Checkout utilizando Mobile Banking
-- Checkout utilizando Direct Bank Transfer
-- Checkout utilizando Paypal
-- Validação de campos obrigatórios
-- Validação de pagamento não selecionado
-- Seleção de país
-- Aceite dos termos de uso
+* Cadastro realizado com sucesso
+* Cadastro com e-mail inválido
+* Cadastro com e-mail sem caractere "@"
 
-## Testes Responsivos
+### 🛒 Checkout
+
+**Cenários automatizados:**
+
+* Checkout utilizando Mobile Banking
+* Checkout utilizando Direct Bank Transfer
+* Checkout utilizando Paypal
+* Validação de campos obrigatórios
+* Validação de pagamento não selecionado
+* Seleção de país
+* Aceite dos termos de uso
+
+---
+
+## 📱 Testes Responsivos
 
 Os cenários de Login e Checkout são executados nos seguintes dispositivos:
 
-- iPhone XR
-- Samsung S10
-- Macbook 16
+* iPhone XR
+* Samsung S10
+* Macbook 16
 
-## Instalação
+---
+
+## ⚙️ Instalação
 
 Clone o repositório:
 
@@ -80,22 +90,26 @@ Instale as dependências:
 npm install
 ```
 
-## Execução
+---
 
-Modo interativo:
+## ▶️ Execução
+
+### Modo Interativo
 
 ```bash
 npx cypress open
 ```
 
-Modo headless:
+### Modo Headless
 
 ```bash
 npx cypress run
 ```
 
-## Autora
+---
 
-Caroline Fratta
+## 👩‍💻 Autora
+
+**Caroline Fratta**
 
 QA Engineer
