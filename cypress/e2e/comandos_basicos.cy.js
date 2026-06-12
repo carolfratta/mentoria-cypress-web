@@ -3,11 +3,11 @@
 describe("Comandos Básicos", () => {
 
     it("Abrir uma URL", () => {
-        cy.visit('https://automationpratice.com.br/login')
+        cy.visit("/login")
     })
 
     it("Encontrar Elementos", () => {
-        cy.visit('https://automationpratice.com.br/login')
+        cy.visit("/login")
 
         cy.get('#user')
 
@@ -22,7 +22,7 @@ describe("Comandos Básicos", () => {
     })
 
     it("Preencher um campo", () => {
-        cy.visit('https://automationpratice.com.br/login');
+        cy.visit("/login");
 
         cy.get('#user').type('teste@teste.com')
         cy.get('#password').type('123456')
@@ -30,32 +30,32 @@ describe("Comandos Básicos", () => {
     })
 
     it("Click no elemento", () => {
-        cy.visit('https://automationpratice.com.br/login')
+        cy.visit("/login")
 
-        cy.get('#btnLogin').click()
-        cy.get('#btnLogin').rightclick()
-        cy.get('#btnLogin').dblclick()
+        cy.get('#btnLogin').click({ force: true })
+        cy.get('#btnLogin').rightclick({ force: true })
+        cy.get('#btnLogin').dblclick({ force: true })
     })
 
     it("Select/Dropdown", () => {
-        cy.visit('https://automationpratice.com.br/checkout-one');
+        cy.visit("/checkout-one");
         cy.get('#country').select(2)
     })
 
     it("Checkbox/Radio", () => {
-        cy.visit('https://automationpratice.com.br/checkout-one');
-        cy.get('#materiaUnchecked').check()
-        cy.get('#materiaUnchecked').uncheck()
-        cy.get('#css').check()
+        cy.visit("/checkout-one");
+        cy.get('#materialUnchecked').check({ force: true })
+        cy.get('#materialUnchecked').uncheck({ force: true })
+        cy.get("input[type='radio']").first().check({ force: true })
     });
 
     it("Validar um elemento", () => {
-        cy.visit('https://automationpratice.com.br/login');
-        cy.get('#user').type('email@teste.com')
+        cy.visit("/login");
+        cy.get('#user').type('teste@teste.com')
         cy.get('#password').type('123456')
-        cy.get('#btnLogin').click();
+        cy.get('#btnLogin').click({ force: true });
 
-        cy.get('#sawl2-title')
+        cy.get('#swal2-title')
             .should('be.visible')
             .should('have.text', 'Login realizado')
 
